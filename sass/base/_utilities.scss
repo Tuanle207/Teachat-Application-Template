@@ -1,0 +1,15 @@
+.medium-margin-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+.on-scroll {
+  &:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+}
+
+.on-hover {
+  &:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+}
