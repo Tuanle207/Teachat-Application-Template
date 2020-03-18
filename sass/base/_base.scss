@@ -19,11 +19,6 @@ body {
   min-height: 100vh;
 }
 
-::-webkit-scrollbar {
-  width: 0.8rem;
-  background-color: transparent;
-}
-
 ::placeholder {
   color: var(--color-grey-3);
 }

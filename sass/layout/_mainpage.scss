@@ -2,6 +2,19 @@
   margin: 0 17.5rem;
   display: flex;
   height: 100vh;
-  min-width: 35rem;
+  min-height: 30rem;
+  min-width: 60rem;
   box-shadow: var(--box-shadow-dark);
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0 10.5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 0rem;
+    min-width: 40rem;
+    width: 100%;
+  }
 }
