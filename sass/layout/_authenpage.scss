@@ -1,0 +1,10 @@
+.authen-content {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0 10rem;
+  }
+}

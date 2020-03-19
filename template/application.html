@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/bubbles.png"
+      type="image/x-icon"
+    />
+    <title>
+      Teachat &mdash; Instant and secure chatting with your friends
+    </title>
+  </head>
+  <body>
+    <main class="content">
+      <!-- SIDE NAVIGATION  -->
+      <div class="side-nav">
+        <!-- PROFILE  -->
+        <div class="profile">
+          <!-- PROFILE CARA -->
+          <figure class="profile__card">
+            <img
+              src="/img/users/user-1.jpg"
+              alt="Jonas"
+              class="profile__card__user-icon"
+            />
+            <figcation class="profile__card__name">Jonas</figcation>
+          </figure>
+
+          <!-- EXPAND BUTTON -->
+          <a class="expand-button">
+            <svg class="profile__expand-button">
+              <use xlink:href="/img/icon/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </a>
+
+          <!-- EXPANDES PROFILE -->
+          <div class="profile__expanded">
+            <div class="profile__contact">
+              <svg class="profile__contact__icon">
+                <use xlink:href="/img/icon/sprite.svg#icon-facebook"></use>
+              </svg>
+              <div class="profile__contact__title-wrap">
+                <p class="profile__contact__title">Jonas207</p>
+              </div>
+            </div>
+            <div class="profile__contact">
+              <svg class="profile__contact__icon">
+                <use xlink:href="/img/icon/sprite.svg#icon-twitter"></use>
+              </svg>
+              <div class="profile__contact__title-wrap">
+                <p class="profile__contact__title">nastt23</p>
+              </div>
+            </div>
+            <div class="profile__contact">
+              <svg class="profile__contact__icon">
+                <use xlink:href="/img/icon/sprite.svg#icon-instagram"></use>
+              </svg>
+              <div class="profile__contact__title-wrap">
+                <p class="profile__contact__title">jonasgtk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- STATUS BAR  -->
+        <div class="status">
+          <ul class="status__list">
+            <li class="status__item">
+              <span> </span>
+              <p>Online</p>
+            </li>
+            <li class="status__item">
+              <span> </span>
+              <p>Away</p>
+            </li>
+            <li class="status__item">
+              <span> </span>
+              <p>Busy</p>
+            </li>
+            <li class="status__item">
+              <span> </span>
+              <p>Offline</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SEARCH FRIENDS  -->
+        <form class="search">
+          <svg class="search__icon">
+            <use xlink:href="/img/icon/sprite.svg#icon-search"></use>
+          </svg>
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search friends..."
+          />
+        </form>
+
+        <!-- FRIENDS LIST -->
+        <div class="friends">
+          <ul class="friends__list">
+            <!-- FRIENDS LIST ITEMS -->
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item friends__item--active">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    <span class="friends__card__text--message__current-user"
+                      >You:
+                    </span>
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="friends__item">
+              <figure class="friends__card">
+                <img
+                  src="/img/users/user-10.jpg"
+                  alt="Anathan"
+                  class="friends__card__photo"
+                />
+                <figcaption class="friends__card__text">
+                  <p class="friends__card__text--name">Anathan Pham</p>
+                  <p class="friends__card__text--message">
+                    Have you had dinner yet?
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- FRIENDS LIST ITEMS -->
+          </ul>
+        </div>
+        <div class="bottom-bar">
+          <button class="bottom-bar__button">
+            <svg class="bottom-bar__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-user-plus"></use>
+            </svg>
+            <span class="bottom-bar__text">
+              Add friend
+            </span>
+          </button>
+          <button class="bottom-bar__button">
+            <svg class="bottom-bar__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-cog"></use>
+            </svg>
+            <span class="bottom-bar__text">
+              Settings
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CHAT SECTION ------------------------------------------------->
+      <div class="chat">
+        <!-- TOP BAR -->
+        <div class="top-bar">
+          <!-- CARD -->
+          <figure class="top-bar__card">
+            <img
+              src="/img/users/user-10.jpg"
+              alt="Anathan Pham"
+              class="top-bar__card__user-icon"
+            />
+            <figcation class="top-bar__card__name">Anathan Pham</figcation>
+          </figure>
+          <!-- LIVE CONTACTS -->
+          <div class="top-bar__live-contact">
+            <svg class="top-bar__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-phone"></use>
+            </svg>
+            <svg class="top-bar__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-video-camera"></use>
+            </svg>
+            <svg class="top-bar__icon">
+              <use
+                xlink:href="/img/icon/sprite.svg#icon-dots-three-vertical"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <!-- CONVERSATION -->
+        <div class="conversation">
+          <!-- MESSAGES LIST -->
+          <ul class="conversation__list">
+            <li
+              class="conversation__message conversation__message--left medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                How the hell am I supposed to get a jury to believe you when I
+                am not even sure that I do?! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dignissimos similique laudantium
+                aliquid consequuntur asperiores? Explicabo sapiente sint ut
+                tempore, necessitatibus quasi hic velit, voluptatem ex ullam
+                dicta, ducimus praesentium magni!
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                When you're backed against the wall, break the god damn thing
+                down.
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Excuses don't win championships.
+              </p>
+            </li>
+            <li
+              class="conversation__message conversation__message--left medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Oh yeah, did Michael Jordan tell you that?
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                No, I told him that.
+              </p>
+            </li>
+            <li
+              class="conversation__message conversation__message--right medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                What are your choices when someone puts a gun to your head?
+              </p>
+            </li>
+
+            <li class="conversation__message conversation__message--left">
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Have you had dinner yet?
+              </p>
+            </li>
+            <li
+              class="conversation__message conversation__message--left medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                How the hell am I supposed to get a jury to believe you when I
+                am not even sure that I do?! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dignissimos similique laudantium
+                aliquid consequuntur asperiores? Explicabo sapiente sint ut
+                tempore, necessitatibus quasi hic velit, voluptatem ex ullam
+                dicta, ducimus praesentium magni!
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                When you're backed against the wall, break the god damn thing
+                down.
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Excuses don't win championships.
+              </p>
+            </li>
+            <li
+              class="conversation__message conversation__message--left medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Oh yeah, did Michael Jordan tell you that?
+              </p>
+            </li>
+            <li class="conversation__message conversation__message--right">
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                No, I told him that.
+              </p>
+            </li>
+            <li
+              class="conversation__message conversation__message--right medium-margin-bottom"
+            >
+              <img
+                src="/img/users/user-1.jpg"
+                alt="Jonas"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                What are your choices when someone puts a gun to your head?
+              </p>
+            </li>
+
+            <li class="conversation__message conversation__message--left">
+              <img
+                src="/img/users/user-10.jpg"
+                alt="Anathan Pham"
+                class="conversation__message__img"
+              />
+              <p class="conversation__message__text">
+                Have you had dinner yet?
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- SEND MESSAGE -->
+        <form class="form-input">
+          <input
+            type="text"
+            class="form-input__input"
+            placeholder="Write your message..."
+          />
+          <div class="form-input__options">
+            <svg class="form-input__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-attachment"></use>
+            </svg>
+            <svg class="form-input__icon">
+              <use xlink:href="/img/icon/sprite.svg#icon-paper-plane"></use>
+            </svg>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="/js/appInteraction.js" type="text/javascript"></script>
+  </body>
+</html>
