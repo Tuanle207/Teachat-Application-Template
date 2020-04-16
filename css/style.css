@@ -13,7 +13,7 @@
   --color-dot-away: #f1c40f;
   --color-dot-busy: #e74c3c;
   --color-dot-offline: #95a5a6;
-  --box-shadow-dark: 1rem 2rem 5rem var(--color-dark-3); }
+  --box-shadow-dark: 2px 5px 10px rgba(0, 0, 0, 0.5); }
 
 * {
   margin: 0;
@@ -501,14 +501,33 @@ body {
       .bottom-bar__text {
         display: none; } }
 
-.authen-content {
-  height: 90vh;
+.spinner {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 56.25em) {
+  .spinner__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: var(--color-grey-3);
+    animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.authen-content {
+  height: 100vh;
+  min-height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
     .authen-content {
-      margin: 0 10rem; } }
+      margin: 0;
+      width: 100%; } }
 
 .app-intro {
   display: none; }
@@ -517,7 +536,7 @@ body {
   width: 40rem;
   background-color: var(--color-grey-1);
   color: var(--color-dark-3);
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow-dark);
   display: flex;
   flex-direction: column;
   min-height: 50rem;

@@ -1,5 +1,5 @@
-{
-  document.querySelector(".expand-button").addEventListener("click", e => {
+(function () {
+  document.querySelector(".expand-button").addEventListener("click", (e) => {
     e.preventDefault();
     document
       .querySelector(".profile__expand-button")
@@ -16,6 +16,9 @@
       document.querySelector(".status").classList.toggle("status--active");
     });
 
+  const chat = document.querySelector(".conversation");
+  chat.scrollTop = chat.scrollHeight;
+
   // let onScroll = false;
   // document.querySelector(".conversation").addEventListener("scroll", () => {
   //   onScroll = true;
@@ -31,4 +34,4 @@
   //     }
   //   }, 1500);
   // });
-}
+})();
